@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service desk</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="asset/css/custom-design.css">
+    <link rel="stylesheet" href="asset/css/media-query.css">
+</head>
+<body>
+
+
+    <div class="body hv-100 pl-0 ">
+       <div class="side-bar bg-dark shadow-md rounded-r">
+        <img src="asset/img/logo.jpg" class="rounded-100 w-25" alt="">
+       </div>
+
+       <div class="side-bar-content pt-3">
+
+       <div class="container-fluid">
+            <div class="shadow-md rounded d-flex p-1 bg-trans-dar justify-content-between align-items-center">
+                <div class="d-flex align-items-center ">
+                    <button class="btn btn-success p-3 pr-4">
+                        <i class="fa fa-align-right fa-lg"></i>
+                    </button>
+                    <p class="m-0 text-dark ml-3">Dashboard</p>
+                </div>
+            </div>
+       </div>
+       <div class="container-fluid">
+            <h2 class="display-4 mt-5" style="font-size: 30px;">
+                <b>Dashboard</b>
+            </h2>
+            <hr class="border">
+            <div class="row">
+                <div class="col-lg-9">
+                    <!-- Dashboard count -->
+                    <div class="row mb-3 dashboard-count jus">
+
+                        <div class="col-md-3 col-6">
+                            <div class="card-content d-flex shadow-md flex-wrap align-items-center justify-content-center pb-3 bg-light w-100 rounded-10px">
+                                <div class="icon-box text-center p-3 bg-warning shadow-md-warning rounded-10px m-3">
+                                    <h2 class="m-0 text-light fa-lg text-center ">
+                                        <i class="fa fa-question-circle"></i> 200+
+                                    </h2>
+                                </div>
+                                <div class="txt-count w-75 d-flex rounded-l align-items-center justify-content-center">
+                                    <h2 class="m-0 text-dark fa-lg text-center word-wrap">
+                                        Unassigned
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-3 col-6">
+                            <div class="card-content d-flex shadow-md flex-wrap align-items-center justify-content-center pb-3 bg-light w-100 rounded-10px">
+                                <div class="icon-box bg-success text-center p-3 shadow-md-success rounded-10px m-3">
+                                    <h2 class="m-0 text-light fa-lg text-center ">
+                                        <i class="fa fa-check-circle"></i> 200+
+                                    </h2>
+                                </div>
+                                <div class="txt-count w-75 d-flex rounded-l align-items-center justify-content-center">
+                                    <h2 class="m-0 text-dark fa-lg text-center word-wrap">
+                                        Resolved
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-3 col-6">
+                            <div class="card-content d-flex shadow-md flex-wrap align-items-center justify-content-center pb-3 bg-light w-100 rounded-10px">
+                                <div class="icon-box text-center p-3 shadow-md-primary bg-primary rounded-10px m-3">
+                                    <h2 class="m-0 text-light fa-lg text-center ">
+                                        <i class="fa fa-times-circle"></i> 200+
+                                    </h2>
+                                </div>
+                                <div class="txt-count w-75 bg- rounded-l d-flex align-items-center justify-content-center">
+                                        <h2 class="m-0 text-dark fa-lg text-center word-wrap">
+                                        Closed
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-3 col-6">
+                            <div class="card-content d-flex shadow-md flex-wrap align-items-center justify-content-center pb-3 bg-light w-100 rounded-10px">
+                                <div class="icon-box text-center bg-danger shadow-md-danger p-3 shadow-md rounded-10px m-3">
+                                    <h2 class="m-0 text-light fa-lg text-center ">
+                                        <i class="fa fa-clock"></i> 200+
+                                    </h2>
+                                </div>
+                                <div class="txt-count w-75 bg- d-flex align-items-center justify-content-center">
+                                    <h2 class="m-0 text-dark fa-lg text-center word-wrap">
+                                        Late
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <hr class="border">
+                    <div class="p-0 d-flex flex-wrap justify-content-between  ">
+                        <nav class="navbar p-0 m-0 justify-content-between" style="border-bottom: rgba(204, 203, 203, 0.657) solid 2px;">
+                            <ul class="navbar nav md-invisible justify p-0 pb-2">
+                                <li class="nav-item">
+                                    <a href="#" class="btn border-bottom shadow-md-primary">
+                                        Opened Tickets
+                                    </a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="btn text-dark">
+                                        Assigned to me
+                                    </a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="btn text-dark">
+                                        Closed
+                                    </a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="btn text-dark">
+                                        Resolved
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="d-flex flex-wrap m-2">
+                            <div class=" d-flex justify-content-between">
+                                <!-- <b>Tickets</b> -->
+                                <label for="search" class="filter p-0 shadow-md d-flex align-items-ceter rounded-20px mr-4">
+                                    <input type="search" name="search" class="p-2 border-0 bg-light bg-transparent rounded-20px" id="search" placeholder="search">
+                                    <i class="p-2 btn-dark pl-3 m-0 fa fa-search"></i>
+                                </label>
+                            </div>
+                            <div class=" d-flex justify-content-between">
+                                <!-- <b>Tickets</b> -->
+                                <label for="filter" class="filter p-0 shadow-md d-flex align-items-center rounded-20px mr-4">
+                                    <input type="date" name="date" class="p-2 border-0 bg-light bg-transparent rounded-20px" id="filter">
+                                    <b class="p-2 btn-dark pl-3 m-0">Filter</b>
+                                </label>
+                            </div>
+    
+                            <div class="paginate pb-2">
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary">
+                                        <i class="fa fa-arrow-left text-light"></i>
+                                    </button>
+                                    <p class="p-2 m-0 btn">
+                                        1 of 20
+                                    </p>
+                                    <button class="btn btn-light">
+                                        <i class="fa fa-arrow-right text-dark"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Ticktest -->
+                    <div class="ticket-lists row">
+                        <div class="col-md-4">
+                            <a href="" class="text-dark nav-link p-0 m-0 mb-3 mt-3">
+                                <div class="ticket rounded-10px shadow-md">
+                                    <div class="ticket body">
+                                        <div class="ticket-header p-2 bg-trans-dark flex-wrap d-flex justify-content-between align-items-center">
+                                            <small class="ticket-id bg-light p-2 border shadow-md rounded-20px word-wrap m-0 p-0 fa-sm">
+                                                #QUVX345908
+                                            </small>
+                
+                                            <b class="date-time d-block text-right p-0 m-0">
+                                                2022-11-11 09:09:09
+                                            </b>
+                                        </div>
+                                        <div class="ticket-title  pl-4 pr-4 pt-3 pb-0">
+                                            <h4 class="m-0">
+                                                Lorem, ipsum dolor
+                                            </h4>
+                                        </div>
+                                        <div class="ticket-content pl-4 pr-4 pb-0">
+                                            <small class="fa-s">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium animi earum natus odio provident, aperiam, explicabo consequatur aut corrupti recusandae voluptas,...
+                                            </small>
+                                        </div>
+                                        <div class="ticket-bottom d-flex p-2 justify-content-end d-flex">
+                                            <small class="ticket-id p-2 pl-4 pr-4 text-primary bg-trans-primary rounded-20px word-wrap m-0 p-0 fa-sm">
+                                                <b>Medium</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4">
+                            <a href="" class="text-dark nav-link p-0 m-0 mb-3 mt-3">
+                                <div class="ticket rounded-10px shadow-md">
+                                    <div class="ticket body">
+                                        <div class="ticket-header p-2 bg-trans-dark flex-wrap d-flex justify-content-between align-items-center">
+                                            <small class="ticket-id bg-light p-2 border shadow-md rounded-20px word-wrap m-0 p-0 fa-sm">
+                                                #QUVX345908
+                                            </small>
+                
+                                            <b class="date-time d-block text-right p-0 m-0">
+                                                2022-11-11 09:09:09
+                                            </b>
+                                        </div>
+                                        <div class="ticket-title  pl-4 pr-4 pt-3 pb-0">
+                                            <h4 class="m-0">
+                                                Lorem, ipsum dolor
+                                            </h4>
+                                        </div>
+                                        <div class="ticket-content pl-4 pr-4 pb-0">
+                                            <small class="fa-s">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium animi earum natus odio provident, aperiam, explicabo consequatur aut corrupti recusandae voluptas,...
+                                            </small>
+                                        </div>
+                                        <div class="ticket-bottom d-flex p-2 justify-content-end d-flex">
+                                            <small class="ticket-id p-2 pl-4 pr-4 text-primary bg-trans-primary rounded-20px word-wrap m-0 p-0 fa-sm">
+                                                <b>Medium</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col-md-4">
+                        <a href="" class="text-dark nav-link p-0 m-0 mb-3 mt-3">
+                            <div class="ticket rounded-10px shadow-md">
+                                <div class="ticket body">
+                                    <div class="ticket-header p-2 bg-trans-dark flex-wrap d-flex justify-content-between align-items-center">
+                                        <small class="ticket-id bg-light p-2 border shadow-md rounded-20px word-wrap m-0 p-0 fa-sm">
+                                            #QUVX345908
+                                        </small>
+            
+                                        <b class="date-time d-block text-right p-0 m-0">
+                                            2022-11-11 09:09:09
+                                        </b>
+                                    </div>
+                                    <div class="ticket-title  pl-4 pr-4 pt-3 pb-0">
+                                        <h4 class="m-0">
+                                            Lorem, ipsum dolor
+                                        </h4>
+                                    </div>
+                                    <div class="ticket-content pl-4 pr-4 pb-0">
+                                        <small class="fa-s">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium animi earum natus odio provident, aperiam, explicabo consequatur aut corrupti recusandae voluptas,...
+                                        </small>
+                                    </div>
+                                    <div class="ticket-bottom d-flex p-2 justify-content-end d-flex">
+                                        <small class="ticket-id p-2 pl-4 pr-4 text-primary bg-trans-primary rounded-20px word-wrap m-0 p-0 fa-sm">
+                                            <b>Medium</b>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <a href="" class="text-dark nav-link p-0 m-0 mb-3 mt-3">
+                                <div class="ticket rounded-10px shadow-md">
+                                    <div class="ticket body">
+                                        <div class="ticket-header p-2 bg-trans-dark flex-wrap d-flex justify-content-between align-items-center">
+                                            <small class="ticket-id bg-light p-2 border shadow-md rounded-20px word-wrap m-0 p-0 fa-sm">
+                                                #QUVX345908
+                                            </small>
+                
+                                            <b class="date-time d-block text-right p-0 m-0">
+                                                2022-11-11 09:09:09
+                                            </b>
+                                        </div>
+                                        <div class="ticket-title  pl-4 pr-4 pt-3 pb-0">
+                                            <h4 class="m-0">
+                                                Lorem, ipsum dolor
+                                            </h4>
+                                        </div>
+                                        <div class="ticket-content pl-4 pr-4 pb-0">
+                                            <small class="fa-s">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium animi earum natus odio provident, aperiam, explicabo consequatur aut corrupti recusandae voluptas,...
+                                            </small>
+                                        </div>
+                                        <div class="ticket-bottom d-flex p-2 justify-content-end d-flex">
+                                            <small class="ticket-id p-2 pl-4 pr-4 text-primary bg-trans-primary rounded-20px word-wrap m-0 p-0 fa-sm">
+                                                <b>Medium</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <a href="" class="text-dark nav-link p-0 m-0 mb-3 mt-3">
+                                <div class="ticket rounded-10px shadow-md">
+                                    <div class="ticket body">
+                                        <div class="ticket-header p-2 bg-trans-dark flex-wrap d-flex justify-content-between align-items-center">
+                                            <small class="ticket-id bg-light p-2 border shadow-md rounded-20px word-wrap m-0 p-0 fa-sm">
+                                                #QUVX345908
+                                            </small>
+                
+                                            <b class="date-time d-block text-right p-0 m-0">
+                                                2022-11-11 09:09:09
+                                            </b>
+                                        </div>
+                                        <div class="ticket-title  pl-4 pr-4 pt-3 pb-0">
+                                            <h4 class="m-0">
+                                                Lorem, ipsum dolor
+                                            </h4>
+                                        </div>
+                                        <div class="ticket-content pl-4 pr-4 pb-0">
+                                            <small class="fa-s">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium animi earum natus odio provident, aperiam, explicabo consequatur aut corrupti recusandae voluptas,...
+                                            </small>
+                                        </div>
+                                        <div class="ticket-bottom d-flex p-2 justify-content-end d-flex">
+                                            <small class="ticket-id p-2 pl-4 pr-4 text-primary bg-trans-primary rounded-20px word-wrap m-0 p-0 fa-sm">
+                                                <b>Medium</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <a href="" class="text-dark nav-link p-0 m-0 mb-3 mt-3">
+                                <div class="ticket rounded-10px shadow-md">
+                                    <div class="ticket body">
+                                        <div class="ticket-header p-2 bg-trans-dark flex-wrap d-flex justify-content-between align-items-center">
+                                            <small class="ticket-id bg-light p-2 border shadow-md rounded-20px word-wrap m-0 p-0 fa-sm">
+                                                #QUVX345908
+                                            </small>
+
+                                            <b class="date-time d-block text-right p-0 m-0">
+                                                2022-11-11 09:09:09
+                                            </b>
+                                        </div>
+                                        <div class="ticket-title  pl-4 pr-4 pt-3 pb-0">
+                                            <h4 class="m-0">
+                                                Lorem, ipsum dolor
+                                            </h4>
+                                        </div>
+                                        <div class="ticket-content pl-4 pr-4 pb-0">
+                                            <small class="fa-s">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium animi earum natus odio provident, aperiam, explicabo consequatur aut corrupti recusandae voluptas,...
+                                            </small>
+                                        </div>
+                                        <div class="ticket-bottom d-flex p-2 justify-content-end d-flex">
+                                            <small class="ticket-id p-2 pl-4 pr-4 text-primary bg-trans-primary rounded-20px word-wrap m-0 p-0 fa-sm">
+                                                <b>Medium</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Recent Chat -->
+                <div class="col-lg-3 border-left">
+                    
+                    <div class="recent-chat-cards">
+                        <div class="ticket-chat-card shadow-md rounded-20px">
+                            <div class="ticket rounded-20px shadow-md">
+                                <div class="ticket body">
+                                    <div class="ticket-header p-2 bg-trans-primary rounded-20px flex-wrap d-flex justify-content-between align-items-center">
+                                        <small class="ticket-id bg-light p-2 border shadow-md rounded-20px word-wrap m-0 p-0 fa-sm">
+                                            #QUVX345908
+                                        </small>
+            
+                                        <div class="d-flex">
+                                            <b class="date-time d-block text-right p-0 m-0">
+                                                09:09:09
+                                            </b>
+                                            <dic class="ml-1 bg-primary p-1 h-25 rounded-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-title  pl-4 pr-4 pt-3 pb-0">
+                                        <h4 class="m-0">
+                                            Lorem, ipsum dolor
+                                        </h4>
+                                    </div>
+                                    <div class="ticket-content pl-4 pr-4 pb-0">
+                                        <small class="fa-s">
+                                            Lorem, ipsum dolor sit amet consectetur ?
+                                        </small>
+                                    </div>
+                                    <div class="ticket-bottom d-flex p-2 justify-content-end btn-group">
+                                       <input type="text" class="w-100 text-dark shadow-md border p-2 rounded-l " placeholder="Message">
+                                       <button class="btn bg-trans-success text-light">
+                                        <i class="far fa-send"></i>
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+    </div>
+
+
+</body>
+</html>
