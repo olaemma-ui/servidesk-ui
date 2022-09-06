@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service desk</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/css/custom-design.css">
+    <link rel="stylesheet" href="asset/css/media-query.css">
+    <link rel="stylesheet" href="asset/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <div class="body hv-100 pl-0 ">
+        <div class="side-bar bg-dark side-close shadow-md" id="side-bar">
+            <div class="d-flex flex-column align-items-center" style="height: 150px;">
+                    <img src="asset/img/logo.jpg" class="rounded-100 mt-3" style="width: 50px;" alt="">
+                    <p class="text-light text-center fa-sm mt-3 icon-txt">
+                        Adeyemo Bashir
+                    </p>
+            </div>
+            <nav class="navbar mt-1 w-100 p-0">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item w-100 mb-4">
+                        <a href="dashboard.html" class="nav-link w-100 pr-5 d-flex align-items-center text-light rounded-r-50 bg-trans-primary ">
+                            <i class="fa-lg fa fa-chart-bar text-light border-primary p-3" style="border-left: solid 3px;"></i>
+                            <span class="icon-txt">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item w-100 mb-4">
+                        <a href="ticket.html" class="nav-link w-100 pr-5 d-flex align-items-center text-light rounded-r-50">
+                            <i class="fa-lg fa fa-ticket text-light  border-warning p-3" style="border-left: solid 3px;"></i>
+                            <span class="icon-txt">Ticket</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item w-100 mb-4">
+                        <a href="" class="nav-link w-100 pr-5 d-flex align-items-center text-light rounded-r-50 ">
+                            <i class="fa-lg far fa-chart-bar text-light  border-light p-3" style="border-left: solid 3px;"></i>
+                            <span class="icon-txt">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item w-100 mb-4">
+                        <a href="" class="nav-link w-100 pr-5 d-flex align-items-center text-light rounded-r-50 ">
+                            <i class="fa-lg far fa-chart-bar text-light  border-success p-3" style="border-left: solid 3px;"></i>
+                            <span class="icon-txt">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item w-100 mb-4">
+                        <a href="" class="nav-link w-100 pr-5 d-flex align-items-center text-light rounded-r-50">
+                            <i class="fa-lg far fa-chart-bar text-light  border-danger p-3" style="border-left: solid 3px;"></i>
+                            <span class="icon-txt">Dashboard</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+       <div class="side-bar-content side-content-close pt-3">
+
+            <div class="container-fluid">
+                <div class="shadow-md rounded d-flex p-1 bg-trans-dar justify-content-between align-items-center">
+                    <div class="d-flex align-items-center ">
+                        <button class="btn btn-success p-3 pr-4" id="toggle-btn">
+                            <i class="fa fa-align-right fa-lg"></i>
+                        </button>
+                        <p class="m-0 text-dark ml-3">Dashboard</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <h2 class="display-4 mt-5" style="font-size: 30px;">
+                    <b>Dashboard</b>
+                </h2>
+                <hr class="border">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <!-- Dashboard count -->
+                        <div class="row mb-3 p-2 dashboard-count jus">
+
+                            <div class="col-md-3 col-6">
+                                <div class="card-content d-flex flex-wrap shadow-md align-items-center justify-content-center p-2 justify-content-lg-between bg-white w-100 rounded-10px">
+                                    <div class="icon-box text-center bg-trans-warning rounded-10px">
+                                        <h2 class="m-0 text-light fa-3x text-center mt-2">
+                                            <i class="far fa-question-circle text-warning"></i>
+                                        </h2>
+                                    </div>
+                                    <div class="txt-count w-7 d-flex flex-column align-items-center justify-content-center">
+                                        <b class="text-right" style="font-size: 25px;">200K+</b>
+                                        <label class="m-0 fa-md text-center word-wrap" style="color: rgb(137, 137, 137);">
+                                            Unassigned
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 col-6">
+                                <div class="card-content d-flex flex-wrap shadow-md align-items-center justify-content-center p-2 justify-content-lg-between bg-white w-100 rounded-10px">
+                                    <div class="icon-box text-center bg-trans-primary rounded-10px">
+                                        <h2 class="m-0 text-light fa-3x text-center mt-2">
+                                            <i class="far fa-question-circle text-primary"></i>
+                                        </h2>
+                                    </div>
+                                    <div class="txt-count w-7 d-flex flex-column align-items-center justify-content-center">
+                                        <b class="text-right" style="font-size: 25px;">200K+</b>
+                                        <label class="m-0 fa-md text-center word-wrap" style="color: rgb(137, 137, 137);">
+                                            Closed
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-6">
+                                <div class="card-content d-flex flex-wrap shadow-md align-items-center justify-content-center p-2 justify-content-lg-between bg-white w-100 rounded-10px">
+                                    <div class="icon-box text-center bg-trans-success rounded-10px">
+                                        <h2 class="m-0 text-light fa-3x text-center mt-2">
+                                            <i class="far fa-question-circle text-success"></i>
+                                        </h2>
+                                    </div>
+                                    <div class="txt-count w-7 d-flex flex-column align-items-center justify-content-center">
+                                        <b class="text-right" style="font-size: 25px;">200K+</b>
+                                        <label class="m-0 fa-md text-center word-wrap" style="color: rgb(137, 137, 137);">
+                                            Resolved
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-6">
+                                <div class="card-content d-flex flex-wrap shadow-md align-items-center justify-content-center p-2 justify-content-lg-between bg-white w-100 rounded-10px">
+                                    <div class="icon-box text-center bg-trans-danger rounded-10px">
+                                        <h2 class="m-0 text-light fa-3x text-center mt-2">
+                                            <i class="far fa-question-circle text-danger"></i>
+                                        </h2>
+                                    </div>
+                                    <div class="txt-count w-7 d-flex flex-column align-items-center justify-content-center">
+                                        <b class="text-right" style="font-size: 25px;">200K+</b>
+                                        <label class="m-0 fa-md text-center word-wrap" style="color: rgb(137, 137, 137);">
+                                            Late
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <hr class="border"> -->
+                        <nav class="navbar p-0 m-0 justify-content-between" style="border-bottom: rgba(204, 203, 203, 0.657) solid 2px;">
+                            <ul class="navbar nav md-invisible justify p-0 pb-2">
+                                <li class="nav-item">
+                                    <a href="#" class="btn border-bottom shadow-md-primary">
+                                        Opened Tickets
+                                    </a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="btn text-dark">
+                                        Assigned to me
+                                    </a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="btn text-dark">
+                                        Closed
+                                    </a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="btn text-dark">
+                                        Resolved
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- Ticket -->
+                        <div class="ticket-lists row">
+                            <div class="col-lg-3 col-md-4 ">
+                                <a href="chat.html" class="text-dark nav-link p-0 m-0 mb-3 mt-3">
+                                    <div class="ticket rounded-20px shadow-md">
+                                        <div class="ticket body">
+                                            <div class="ticket-header rounded-20px p-2 bg-trans-primary flex-wrap d-flex justify-content-between align-items-center">
+                                                <small class="ticket-id bg-light border shadow-md-primary rounded-20px word-wrap m-0 p-1 pl-2 pr-2 font-weight-bold">
+                                                    #QUVX345908
+                                                </small>
+
+                                                <b class="date-time d-block fa-sm text-right p-0 m-0">
+                                                    2022-11-11 09:09:09
+                                                </b>
+                                            </div>
+                                            <div class="ticket-title  pl-2 pr-2 pt-2 pb-0">
+                                                <h4 class="m-0 word-wrap text-wrap">
+                                                    Lorem, ipsum dolor.
+                                                </h4>
+                                            </div>
+                                            <div class="ticket-content pl-2 pr-2 pb-0">
+                                                <small class="fa-s">
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit...
+                                                </small>
+                                            </div>
+                                            <div class="ticket-bottom d-flex p-2 justify-content-end d-flex">
+                                                <small class="ticket-id p-3 pl-4 pr-4 text-primary bg-trans-primary rounded-20px word-wrap  fa-sm">
+                                                    <b>Medium</b>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Tickets -->
+                    </div>
+
+                    <!-- Recent Chat -->
+                    <div class="col-lg-3 border-left">
+                        
+                        <div class="recent-chat-cards">
+                        
+                            <div class="ticket-chat-card shadow-md rounded-20px m-2">
+                                <div class="ticket rounded-20px shadow-md">
+                                    <div class="ticket body">
+                                        <div class="ticket-header p-2 rounded-20px flex-wrap d-flex justify-content-between align-items-center">
+                                            <small class="ticket-id p-2 border bg-primary text-white shadow-md rounded-20px word-wrap m-0 p-0">
+                                                #QUVX345908
+                                            </small>
+                
+                                            <div class="d-flex">
+                                                <b class="date-time d-block text-right p-0 m-0">
+                                                    09:09:09
+                                                </b>
+                                                <dic class="ml-1 bg-primary p-1 h-25 rounded-100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-title d-flex justify-content-between pl-4 pr-2 pt- pb-0">
+                                            <h4 class="m-0">
+                                                Lorem, ipsum dolor
+                                            </h4>
+                                            <a href="#" class="btn-primary rounded p-2 pb-1 pt-1" style="height: 40px;">
+                                                <i class="fa fa-wifi"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ticket-content pl-4 pr-4 pb-0">
+                                            <small class="fa-sm">
+                                                Lorem, ipsum dolor sit amet consectetur ?
+                                            </small>
+                                        </div>
+                                        <div class="ticket-bottom d-flex p-2 justify-content-end btn-group">
+                                        <input type="text" class="w-100 text-dark shadow-md border p-2 rounded-l " placeholder="Message">
+                                        <button class="btn bg-trans-success text-light">
+                                            <i class="far fa-comment-alt"></i>
+                                        </button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+
+
+</body>
+
+<script src="asset/script/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="asset/popper.min.js"></script>
+
+</html>
