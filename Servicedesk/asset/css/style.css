@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .word-wrap{
     word-wrap: break-word;
 }
@@ -70,6 +71,10 @@ input:focus{
     border-bottom-left-radius: 50px;
 }
 
+.rounded-r-50{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 .border-b-2{
     border-bottom: #28a745 solid 2px;
 }
@@ -84,17 +89,25 @@ input:focus{
     box-shadow: #28a7466a 0px 0px 10px 0px;
 }
 .shadow-md-warning{
-    box-shadow: #ffc1077f 0px 0px 10px 0px;
+    box-shadow: #ffc1079b 0px 0px 10px 0px;
 }
 .shadow-md-danger{
     box-shadow: rgba(249, 36, 36, 0.344) 0px 0px 10px 0px;
 }
 
 .bg-trans-success{
-    background-color: #28a746c4;
+    background-color: rgba(40, 167, 70, 0.223);
 }
 .bg-trans-primary{
-    background-color: #007bff4f;
+    background-color: rgba(0, 123, 255, 0.228)
+}
+
+.bg-trans-danger{
+    background-color: rgba(248, 14, 14, 0.2);
+}
+
+.bg-trans-warning{
+    background-color: rgba(229, 172, 0, 0.264);
 }
 /* width mesaured in px */
 .w-120-px{

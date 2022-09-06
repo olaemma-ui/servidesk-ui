@@ -16,16 +16,17 @@
 .side-bar{
     display: flex;
     flex-direction: column;
-    height: 100%;
     align-items: center;
-    width: 18em;
-    padding: 10px;
     position: fixed;
+    height: 100%;
+    width: 5em;
+    padding: 10px;
+    z-index: 99;
     /* width: 23%; */
     /* justify-content: center; */
 }
 .side-bar-content{
-    margin-left: 18em;
+    margin-left: 5em;
     /* width: 70; */
 }
 .circle-avatar{
@@ -33,7 +34,19 @@
     width: 100px;
     height: auto;
 }
-
-/* .ticket{
-    max-width: 800px;
-} */
+.icon-txt{
+    visibility: hidden;
+    position: absolute;
+}
+.icon-box{
+    height: 5em;
+    width: 6.5em;
+}
+.ticket-id{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ticket-table {
+    /* height: 80px; */
+    /* background-color: green; */
+    /* pa */
+}

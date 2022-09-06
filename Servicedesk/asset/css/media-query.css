@@ -6,14 +6,12 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .side-bar{
-        visibility: hidden;
-        display: none;
-        position: absolute;
+        width: 5em;
     }
     .side-bar-content{
+        margin-left: 5em;
         width: 100%;
-        margin-left: 0%;
     }
 }
