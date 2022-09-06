@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="asset/css/custom-design.css">
     <link rel="stylesheet" href="asset/css/media-query.css">
     <link rel="stylesheet" href="asset/css/animate.css">
+    <link href="https://cdn.quilljs.com/1.1.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.1.6/quill.js"></script>
 </head>
 <body class="bg-light">
 
@@ -26,7 +28,7 @@
                 <ul class="navbar-nav w-100">
                     <li class="nav-item w-100 mb-4">
                         <a href="dashboard.html" class="nav-link w-100 pr-5 d-flex align-items-center text-light rounded-r-50 bg-trans-primary ">
-                            <i class="fa-lg fa fa-chart-bar text-light border-primary p-3" style="border-left: solid 3px;"></i>
+                            <i class="fa-lg fa fa-dashboard text-light border-primary p-3" style="border-left: solid 3px;"></i>
                             <span class="icon-txt">Dashboard</span>
                         </a>
                     </li>
@@ -74,23 +76,80 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
+                <div class="row">
                     <div class="col-lg-6">
-                        <div class="ticket-chat-box bg-white rounded-20px shadow-md p-md-4 p-4 mt-5">
+                        <div class="d-flex flex-column justify-content-end tticket-chat-box bg-white rounded-20px shadow-md p-md-4 p-4 mt-5">
                             <div class="tcket-chat-header">
                                <div class="d-flex justify-content-between mb-3 flex-wrap">
                                 <b class="fa-md p-2 pl-4 shadow-md-success pr-4 mt-2 float-left bg-success text-light rounded-20px " style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                                     #QWERTY62567
                                 </b>
-                                <b class="float-right fa-md p-2 pl-4 pr-4 bg-light mt-2 shadow-md text-dark rounded-20px " style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                                    <i class="far fa-user-circle"></i> 7668
+                                <b class="float-right fa-lg pt-3 p-2 pl-4 pr-4 bg-light mt-2 shadow-md text-dark rounded-20px " style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                    <i class="far fa-user-circle fa-lg"></i>#7668
                                 </b>
                                </div>
-                                
-                                <b class="m-0 ticket-chat-title text-dark " style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        
+                                <b class="m-0 ticket-chat-title text-dark " style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: x-large;">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 </b>
+                                <hr class="bg-light">
                             </div>
+                           <div class="chat-box d-flex flex-column">
+                               
+                                <div class="chat-overflow d-flex flex-column pr-1">
+                                    <div class="sender rounded-10px pl-3 pr-3 mt-4 pt-3 pb-1 align-self-start mt3 d-flex flex-column border border-primary">
+                                        <p class="m-0">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatem id voluptas veniam harum perferendis, atque aspernatur quo fuga enim reprehenderit rerum sed ipsum asperiores quod voluptatum voluptates natus aliquam!
+                                        </p>
+                                        <hr class="w-100 m-0 mt-2 shadow-md bg-primary">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <small class="icon">
+                                                <i class="text-primary far fa-user-circle"></i>
+                                            </small>
+                                            <small class="text-primary align-self-start" style="font-size: 10px;">
+                                                20-11-2022 09:09:09
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="receiver border border-secondary bg-light pl-3 pr-3 pt-3 pb-1 rounded-10px d-flex flex-column align-self-end mt-3 bor">
+                                        <p class="m-0">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequatur quidem deleniti harum est minus. Error eius repudiandae corporis soluta a voluptas debitis, accusantium placeat quasi, deserunt impedit, vitae quaerat!
+                                        </p>
+                                        <hr class="w-100 m-0 mt-2 shadow-md bg-secondary">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <small class="text-dark align-self-start" style="font-size: 10px;">
+                                                20-11-2022 09:09:09
+                                            </small>
+                                            <small class="icon p-0 m-0">
+                                                <i class="text-secondary fa fa-dashboard"></i>
+                                            </small>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+
+                                <hr class="w-100 m-0 mt-2 shadow-md bg-light">
+
+                                <div class="mt-3 shadow-md">
+                                    <div id="editor"></div>
+                                </div>
+
+                               <div class="d-flex justify-content-between mt-3">
+                                    <div class="btn-group">
+                                        <button class="btn btn-primary">
+                                            Release
+                                        </button>
+
+                                        <button class="btn btn-success">
+                                            Resolved
+                                        </button>
+                                    </div>
+                                    <button class="btn btn-dark rounded-0 p-2 align-self-end reply-btn">
+                                        Reply
+                                    </button>
+                               </div>
+                           </div>
                         </div>
                     </div>
                 </div>
@@ -101,7 +160,13 @@
 
 
 </body>
+<script>
+    //Quill editor Rich Text Field
+    var quill = new Quill('#editor', {
+       theme: 'snow'
+     });
 
+</script>
 <script src="asset/script/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
