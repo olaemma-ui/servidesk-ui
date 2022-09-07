@@ -4,11 +4,11 @@
 }
 .form-field .form-input{
     width: 100%;
-    height: 50px;
+    height: 4   0px;
 }
 .form-field .form-icon{
     width: 50px;
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,8 +45,31 @@
 .ticket-id{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.ticket-table {
-    /* height: 80px; */
-    /* background-color: green; */
-    /* pa */
+.ticket-id-tbl{
+    width: 100px;
+}
+.sender{
+    max-width: 70%;
+    background-color: rgba(78, 163, 254, 0.304);
+}
+.receiver{
+    max-width: 70%;
+}
+#editor {
+    height: 100px;
+}
+.reply-btn{
+    width: 150px;
+}
+.chat-overflow{
+    max-height: 400px;
+    height: 400px;
+    overflow-y: scroll;
+}
+div::-webkit-scrollbar {
+    width: 12px;
+}
+div::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    border-radius: 10px;
 }
