@@ -52,11 +52,11 @@
 
 }
 .sender{
-    max-width: 80%;
+    max-width: 70%;
     background-color: rgba(78, 163, 254, 0.304);
 }
 .receiver{
-    max-width: 80%;
+    max-width: 70%;
 }
 #editor {
     height: 100px;
