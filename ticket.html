@@ -17,15 +17,15 @@
     <div class="body hv-100 pl-0">
         <div class="side-bar bg-dark side-close shadow-md" id="side-bar">
             <div class="d-flex flex-column align-items-center" style="height: 150px;">
-                    <img src="asset/img/logo.jpg" class="rounded-100 mt-3" style="width: 50px;" alt="">
-                    <p class="text-light text-center fa-sm mt-3 icon-txt">
-                        Adeyemo Bashir
-                    </p>
+                <img src="asset/img/logo.jpg" class="rounded-100 mt-3" style="width: 50px;" alt="">
+                <p class="text-light text-center fa-sm mt-3 icon-txt">
+                    Adeyemo Bashir
+                </p>
             </div>
             <nav class="navbar mt-1 w-100 p-0">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item w-100 mb-4">
-                        <a href="Dashboard.html" class="nav-link w-100 pr-5 d-flex align-items-center text-light rounded-r-50">
+                        <a href="dashboard.html" class="nav-link w-100 pr-5 d-flex align-items-center text-light rounded-r-50">
                             <i class="fa-lg fa fa-chart-bar text-light border-primary p-3" style="border-left: solid 3px;"></i>
                             <span class="icon-txt">Dashboard</span>
                         </a>
@@ -77,27 +77,65 @@
                 </div>
 
                 <div class="content mt-3">
-                    <h3 class="display-4 fa-2x">
+                    <h3 class="display-4 fa-2x m-0 p-0">
                         #Tickets
                     </h3>
                     <hr class="border m-0 mb-3">
                     <div class="d-flex flex-wrap justify-content-between -2">
-                        <div class="d-flex flex-wrap">
-                            <div class=" d-flex">
-                                <!-- <b>Tickets</b> -->
-                                <label for="search" class="filter p-0 shadow-md d-flex align-items-ceter rounded-20px mr-4">
-                                    <input type="search" name="search" class="p-2 border-0 bg-light bg-transparent rounded-20px" id="search" placeholder="search">
-                                    <i class="p-3 btn-dark pl-3 m-0 fa fa-search"></i>
-                                </label>
-                            </div>
-                            <div class=" d-flex justify-content-between">
-                                <!-- <b>Tickets</b> -->
-                                <label for="filter" class="filter p-0 shadow-md d-flex align-items-center rounded-20px mr-4">
-                                    <input type="date" name="date" class="p-2 border-0 bg-light bg-transparent rounded-20px" id="filter">
-                                    <b class="p-3 btn-dark pl-3 m-0 far fa-calendar-alt"></b>
-                                </label>
-                            </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-center">
+                            <label for="search" class="btn-group filter shadow-md rounded-20px mr-4">
+                                <input type="search" name="search" class="p-1 border-0 bg-transparent rounded-20px" id="search" placeholder="search">
+                                <i class="btn btn-dark m-0 fa fa-search"></i>
+                            </label>
+
+                            <label for="search" class="btn-group filter shadow-md rounded-20px mr-4">
+                                <input type="date" name="date" class="p-1 border-0 bg-transparent rounded-20px" id="date" placeholder="date">
+                                <i class="btn btn-dark m-0 fa fa-calendar"></i>
+                            </label>
+
+                            <a href="raiseTicket.html" class="nav-link p-1 pl-3 pr-3 rounded-10px shadow-md border  border-primary">
+                                Raise Ticket
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap shadow-md rounded-20px justify-content-between">
+                        <ul class="navbar nav p-0 justify-content-start">
+                            <li class="nav-item m-1">
+                                <a href="#" class="nav-link p-1 text-light pl-3 pr-3 rounded-20px shadow-md-primary bg-primary">
+                                    Opened
+                                </a>
+                            </li>
     
+                            <li class="nav-item m-1">
+                                <a href="#" class="nav-link p-1 text-dark pl-3 pr-3 rounded-20px bg-light">
+                                    Closed
+                                </a>
+                            </li>
+    
+                            <li class="nav-item m-1">
+                                <a href="#" class="nav-link p-1 text-dark pl-3 pr-3 rounded-20px bg-light">
+                                    Resolved
+                                </a>
+                            </li>
+    
+                            <li class="nav-item m-1">
+                                <a href="#" class="nav-link p-1 text-dark pl-3 pr-3 rounded-20px bg-light">
+                                    Active
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="paginate rounded">
+                            <div class="btn-group">
+                                <button class="btn btn-primary">
+                                    <i class="fa fa-arrow-left text-light"></i>
+                                </button>
+                                <p class="p-2 m-0 btn btn-light">
+                                    1 of 20
+                                </p>
+                                <button class="btn btn-primary">
+                                    <i class="fa fa-arrow-right text-"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="container-fluid">
@@ -111,7 +149,6 @@
                                                 <small class="ticket-id bg-light border shadow-md-primary rounded-20px word-wrap m-0 p-1 pl-2 pr-2 font-weight-bold">
                                                     #QUVX345908
                                                 </small>
-
                                                 <small class="date-time d-block p-1 text-right p-0 m-0">
                                                     2022-11-11 09:09:09
                                                 </small>
@@ -136,20 +173,6 @@
                                 </a>
                             </div>
 
-                        </div>
-
-                        <div class="paginate pb-2">
-                            <div class="btn-group">
-                                <button class="btn btn-primary">
-                                    <i class="fa fa-arrow-left text-light"></i>
-                                </button>
-                                <p class="p-2 m-0 btn btn-light">
-                                    1 of 20
-                                </p>
-                                <button class="btn btn-primary">
-                                    <i class="fa fa-arrow-right text-"></i>
-                                </button>
-                            </div>
                         </div>
                     </div>
             </div>

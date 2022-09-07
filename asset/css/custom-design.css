@@ -5,6 +5,7 @@
 .form-field .form-input{
     width: 100%;
     height: 4   0px;
+    outline: none;
 }
 .form-field .form-icon{
     width: 50px;
@@ -72,4 +73,17 @@ div::-webkit-scrollbar {
 div::-webkit-scrollbar-track {
     box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
     border-radius: 10px;
+}
+.txt-editor *{
+    border-radius: 20px;
+}
+.txt-editor div:nth-child(1){
+    box-shadow: rgba(186, 186, 186, 0.437) 0px 0px 10px 0px;
+
+}
+.bg-orange{
+    background-color: rgba(254, 145, 44, 0.484);
+}
+.text-orange{
+    color: rgb(190, 85, 0);
 }

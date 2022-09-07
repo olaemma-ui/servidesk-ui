@@ -35,3 +35,7 @@ document.querySelector("#toggle-btn").addEventListener("click", function(){
     }
     toggle = !toggle;
 })
+
+document.querySelectorAll("input[type:checkbox]").addEventListener("click", function (e) {
+    console.log("Clicked"+ e.innerText);
+})
